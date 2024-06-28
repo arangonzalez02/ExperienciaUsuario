@@ -1,0 +1,168 @@
+/**
+Hoja de estilo comun para todos los proyectos
+ */
+ *{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33% ;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+
+@media only screen and (width<=768px){
+    [class*="col-"]{
+        width: 100%;
+    }
+    .contenedor{
+        flex-direction: column;
+    }
+    .col-img-4{
+        max-width: 33.33%;
+    }
+}
+@media only screen and (width>768px) and (width<=992px ){
+    .col-1,.col-2,.col-3,.col-4,.col-5{
+        width: 50%;
+    }
+    .col-7,.col-8,.col-9,.col-10,.col-11{
+        width: 100%;
+    }
+
+}
+  
+  /* TIPOGRAFÍAS */
+  .ubuntu-light {
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  /* ESTRUCTURA GENERAL */
+  * {
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer {
+    height: 500px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+
+
+  /*COLOR*/
+
+  .rojo{
+    color: red;
+  }
+
+
+
+  /*COSAS*/
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .validoInput{
+    border: 2px solid darkgreen;
+  }
+
+  .errorInput{
+    border: 2px solid darkred;
+  }
